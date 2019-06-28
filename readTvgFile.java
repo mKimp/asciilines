@@ -24,7 +24,7 @@ public class readTvgFile {
         // read the file starting on the second line
         while (sc.hasNext()) { // read each character one by one until the end of the file
 
-            // Has to follow the structure : string, int, int, string, int or program will fail
+            // Has to follow the structure : string, int, int, string, int, program will fail
             String renderChar = sc.next();
             int r = sc.nextInt();
             int c = sc.nextInt();

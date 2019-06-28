@@ -17,6 +17,14 @@ javac readTvgFile.java
 java readTvgFile
 ```
 
+# Failed Test
+
+The test fails in several cases. 
+
++ If the input is an invalid file, the program fails immediately. 
++ If the file is not structured as expected (string, int, int, string, int), the program fails immediately.
++ if the length in the rendered command line is 0 or less, the program still executes normally. However, there is an error message which indicates the illegal rendered character and its lenghth. The canvas will not display that rendered character. 
+
 # License
 This program is licensed under the "MIT License". Please see the file LICENSE in the source distribution of this software for license terms.
 
