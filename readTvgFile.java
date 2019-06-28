@@ -107,7 +107,7 @@ public class readTvgFile {
             // the length in rendered command line is 0 or less
             else {
                 System.out.println("Error message: the length of " + "renderChar " + renderChar + " is " + length
-                        + " .It will not be rendered in the canvas"); 
+                        + " (The length has to be greater than 0). It will not be rendered in the canvas"); 
             }
         }
         // close reading the file
