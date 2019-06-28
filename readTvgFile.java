@@ -50,11 +50,9 @@ public class readTvgFile {
                     // make sure if the length is larger than the canvas column, only points inside
                     if (length >= col) {
                         for (int i = c; i < col; ++i) {
-                            // canvas[r][i] = renderChar;
                             canvas[r][i] = renderChar;
                             ++increaseCol;
                         }
-
                     }
                     // if the length is less than canvas column
                     else if (length < col) {
@@ -87,7 +85,6 @@ public class readTvgFile {
                         int temp = row - r;
                         if (length < temp) {
                             for (int i = 0; i < length; ++i) {
-
                                 canvas[increaseRow][c] = renderChar;
                                 ++increaseRow;
                             }
@@ -99,10 +96,8 @@ public class readTvgFile {
                                 ++increaseRow;
                             }
                         }
-
                     }
                 }
-
             }
             // the length in rendered command line is 0 or less
             else {
@@ -116,7 +111,6 @@ public class readTvgFile {
         // prinnt the canvas
         for (int i = 0; i < row; ++i) {
             for (int j = 0; j < col; ++j) {
-
                 System.out.print(canvas[i][j] + " ");
             }
             System.out.println();
